@@ -1,17 +1,40 @@
 body {
-    background-color: #f8f9fa;
-}
-
-.screenshot {
-    max-width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 8px;
-}
-.description {
-    font-size: 1.2rem;
-}
-.caption {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .app-container {
+    max-width: 900px;
+    padding: 40px 20px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .screenshot {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .caption {
     font-size: 0.95rem;
     color: #555;
-}
+    margin-top: 8px;
+  }
+  
+  .screenshot-block {
+    margin-bottom: 30px;
+  }
+  
