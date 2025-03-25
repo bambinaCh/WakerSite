@@ -12,14 +12,22 @@ body {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   }
   
+  
   .app-title {
     font-size: 2rem;
     font-weight: bold;
   }
   
-  .description {
-    font-size: 1.1rem;
-    margin-top: 10px;
+  .author {
+    margin-bottom: 20px;
+  }
+  
+  .long-description {
+    font-size: 1.05rem;
+    color: #333;
+    margin: 0 auto 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
   }
   
   .screenshot {
