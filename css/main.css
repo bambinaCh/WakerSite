@@ -1,53 +1,93 @@
 body {
-    background-color: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .app-container {
-    max-width: 900px;
-    padding: 40px 20px;
-    background-color: white;
-    margin-top: 40px;
-    border-radius: 16px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .app-icon {
-    width: 120px;
-    height: 120px;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.app-container {
+  max-width: 900px;
+  padding: 40px 20px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.app-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.author {
+  margin-bottom: 20px;
+}
+
+.long-description {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0 auto 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.screenshot {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.caption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.screenshot-block {
+  margin-bottom: 30px;
+}
+
+/* ----------------------- */
+/* 🎯 Responsive Erweiterung */
+@media (max-width: 768px) {
+  .app-icon {
+    width: 90px;
+    height: 90px;
+  }
 
   .app-title {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
   }
-  
-  .author {
-    margin-bottom: 20px;
-  }
-  
+
   .long-description {
-    font-size: 1.05rem;
-    color: #333;
-    margin: 0 auto 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
+    font-size: 1rem;
+    padding: 0 10px;
   }
-  
-  .screenshot {
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-  }
-  
+
   .caption {
+    font-size: 0.85rem;
+  }
+
+  .app-container {
+    padding: 20px 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.3rem;
+  }
+
+  .app-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .long-description {
     font-size: 0.95rem;
-    color: #555;
-    margin-top: 8px;
   }
-  
-  .screenshot-block {
-    margin-bottom: 30px;
-  }
-  
+}
