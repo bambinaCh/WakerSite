@@ -1,45 +1,63 @@
+/* Grundlayout */
 body {
   background-color: #f4f4f4;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Container für den gesamten App-Eintrag */
 .app-container {
-  max-width: 900px;
-  padding: 40px 20px;
-  background-color: white;
-  margin-top: 40px;
+  max-width: 960px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px 30px;
   border-radius: 16px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
 }
 
-.app-icon {
-  width: 120px;
-  height: 120px;
-}
-
+/* Titel */
 .app-title {
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+/* Beschreibung und Icon nebeneinander */
+.description-row {
+  margin-bottom: 40px;
+}
+
+/* App-Icon links */
+.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+/* Autor-Text unter Icon */
 .author {
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #777;
 }
 
+/* Beschreibungstext */
 .long-description {
   font-size: 1.05rem;
-  color: #333;
-  margin: 0 auto 40px auto;
-  max-width: 650px;
   line-height: 1.6;
+  color: #333;
 }
 
+/* Screenshots */
 .screenshot {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #ddd;
 }
 
+/* Untertitel zu den Screenshots */
 .caption {
   font-size: 0.95rem;
   color: #555;
@@ -50,44 +68,45 @@ body {
   margin-bottom: 30px;
 }
 
-/* ----------------------- */
-/* 🎯 Responsive Erweiterung */
+/* Responsive Anpassungen */
 @media (max-width: 768px) {
-  .app-icon {
-    width: 90px;
-    height: 90px;
+  .app-container {
+    padding: 25px 20px;
   }
 
   .app-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .app-icon {
+    width: 56px;
+    height: 56px;
   }
 
   .long-description {
     font-size: 1rem;
-    padding: 0 10px;
   }
 
   .caption {
     font-size: 0.85rem;
   }
-
-  .app-container {
-    padding: 20px 15px;
-    margin-top: 20px;
-  }
 }
 
 @media (max-width: 480px) {
   .app-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .app-icon {
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
   }
 
   .long-description {
     font-size: 0.95rem;
+  }
+
+  .caption {
+    font-size: 0.8rem;
   }
 }
